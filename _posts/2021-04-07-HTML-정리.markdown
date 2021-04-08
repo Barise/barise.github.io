@@ -1,8 +1,106 @@
 ---
 layout: HTML5
 title:  "HTML5 정리"
-date:   2021-04-07 19:30:29 +0900
-categories: sample
+date:   2021-04-08 19:30:29 +0900
+categories: Web
 ---
+# HTML5
+## 1. HTML5 등장배경
+호환성, 웹 기반 기술
 
-- HTML5 등장배경
+- 최근 네이버 메인화면
+![최근naver](../public/img/latestNaver.png)
+다양한 이미지,동영상과 같은 멀티미디어 들이 포함되어있음
+
+_HTML4에서는 이러한 멀티미디어 서비스를 제공하기위해 플러그인(plug-in)을 활용하였습니다._
+
+하지만, Adobe Flash, ActiveX와 같은 플러그인으로 다양한 서비스를 제공할 수는 있었지만, **호환성** 측면에서 문제점이 발생합니다.
+
+![기존adobe](https://t1.daumcdn.net/cfile/tistory/998C463359B09C7527)
+
+예를들어, IE(Internet Explorer)에서는 잘되다가 Chrome 환경에서는 또 다른 모듈을 설치해야하는 등의 불편함을 가져오게 됩니다.
+
+이와같이 기존의 HTML은 더 좀더 동적인 표현과 뛰어난 상호작용이 요구되었고 이로인해 새로운 기술이 나오게 되었습니다. 
+
+## HTML 5
+
+HTML 5와 HTML4는 크게 4가지정도의 차이점이 있습니다.
+
+
+## 1. Syntax - 간략하고 명확해진 문법
+- HTML4 : &#60;meta http-equiv= content-type content= text/html charset=utf-8&#62;
+- HTML5 : &#60;meta charset="uft-8"&#62;
+- 복잡한 문서 형식 선언을 생략하여 브라우저 환경에 따라 문제가 발생하던 상황을 인코딩 기법을 간소화 하여 개발자에게 편의성을 제공
+
+
+## 2. Contents Model
+- HTML 문서작성의 큰 구조로, 어떤 요소가 어떤 콘텐츠 또는 요소를 포함할수 있는지를 말합니다.  
+<center>
+
+|HTML4|HTML5|
+|--------------|-------|
+|&#60;div id ="header"&#62;|&#60;header&#62;|
+|&#60;div id ="nav"&#62;|&#60;nav&#62;|
+|&#60;div id ="content"&#62;|&#60;section&#62;|
+|&#60;div id ="article"&#62;|&#60;article&#62;|
+|&#60;div id ="footer"&#62;|&#60;footer&#62;|
+</center>
+<br/>
+
+- HTML5에서는 Contents Model이라는 개념이 추가되어 기존의 id나 class를 활용하여 Outline을 잡았던 것과 다르게 다음과 같이 좀 더 Semantic 한 웹 구성을 가능하게 하였습니다.
+<br/>
+
+<center>
+
+![tempOut](../public/img/outline.png)
+</center>
+
+## 3. Element와 Attribute의 추가 및 변경
+![addElement1](https://mblogthumb-phinf.pstatic.net/MjAxNjEyMjZfMjI3/MDAxNDgyNzM0MDUwNjYy.5OHu9VvgS27ISaBX2EIkgKc3QPphZMHJkDwytjDUbfIg.z6Yh3YWOnU3ntiZS0GrxMzuvX15BfugPuo-1q80wU9Eg.JPEG.lool2389/%EC%BA%A1%EC%B2%98.JPG?type=w800)
+![addElement2](https://mblogthumb-phinf.pstatic.net/MjAxNjEyMjZfMjM2/MDAxNDgyNzM0MzQ0Mzcz.yI7tzVMCfA1BDxIDJHCh8OaR7t-6TfO1Wr6JocY68Lkg.CaRRpplDXvXp8VTaYI-f_FhHv12tGAKMQHVvm38H_ykg.JPEG.lool2389/%EC%BA%A1%EC%B2%98.JPG?type=w800)
+![addAttribute](https://mblogthumb-phinf.pstatic.net/MjAxNjEyMjZfMjg1/MDAxNDgyNzM0NDI5NDEw.gp_LQ7Kdl-D1kC-flcP_3ZRduxr-3Z3E1h0IqsHIcUQg.9mXRu8a6ttP0RXD59alS-G8VhdiDV_Xh8k1uFW5GCZog.JPEG.lool2389/%EC%BA%A1%EC%B2%98.JPG?type=w800)
+
+
+## 4. API
+- Offline Application Cache
+HTML5는 오프라인 환경을 고려한 API들(Storage, Database)이 있다.
+하지만 이 API들이 오프라인에서 정상적으로 작동하기 위해서는 결국
+CSS, 이미지, 자바스크립트 등과 같은 리소스를 필요로한다. 이러한 환경를
+궁극적으로 충족시켜 주는 것이 바로 Application Cache API이다. 오프라인
+상태에서도 웹 애플리케이션으로의 접근을 가능케 하는 매우 중요한 기능
+이다. 이것은 기존 브라우저들이 사용하던 캐싱 메커니즘과는 차이가 있다.
+오프라인 상태에서 개발자의 예상대로 작동하고 신뢰할 수 있는 새로운 인
+터페이스인 것이다. 이 것은 다음과 같은 3가지 장점을 가진다:
+
+¾ 오프라인 브라우징 - 오프라인 상태에서도 사용자가 사이트에 접근할 수 있다.
+¾ 속도 향상 - 로컬 영역에 저장된 리소스들은 매우빠른 로드 속도로 호출된다.
+¾ 서버 부하 감소 - 브라우저는 오직 리소스가 변경된 경우에만 다운로드를 시도한다
+
+- 쿠키의 단점을 보완하기위한 webStorage
+쿠키 사용의 단점
+쿠키는 수 년 동안 사용자의 고유 데이터를 추적하는데 사용되어 왔지만
+심각한 단점들이 있다. 그 중에도 가장 큰 결함은 모든 쿠키 데이터가
+HTTP 요청 헤더에 포함되어 버린다는 점이다.
+ 1) 4KB의 제한된 크기
+
+ 2)  HTTP Request에서 암호화되지 않아 보안에 취약하고 성능에 영향을 줄 수 있음
+
+ localStorage와 sessionStorage 이 두개의 웹 저장소 개체는
+클라이언트-사이드에 사용자 데이터를 세션이 유지되는 동안 또는 무기한
+으로 유지하는데 사용 할 수 있다. 또한 개인 자료가 HTTP 요청에 전송되
+지도 않는다. 
+
+- http의 단방향 통신을 보완하기 위한 양방향 통신 WebSocket
+- Web Storage의 경우 비교적 적은양의 간단한 데이터를 저장하기에 적합한 로컬 저장소인 반면 Web SQL Database는 보다 구조적이고 체계화된 관계형 데이터를 대량으로 저장하기에 적합하다.
+물론 Web SQL Database가 Oracle과 같이 서버급, 대용량 DBMS의 면모를 모두 갖추지는 않았지만, 안정적이고 경량의 관계형 자료구조를 지원하고 표준 SQL 질의를 통해 데이터를 보다 유연하게 다를 수 있다는 점과 클라이언트(브라우저)에 직접 내장되어 있다는 점에서 매우 유용한 기능이라 할 수 있다.
+
+Web SQL Database는 아이폰과 같은 모바일 환경에 많이 재용된 경량의 무료 DB엔진인 SQLite를 기반으로 하고 있다.
+
+Web SQL Database 역시 Web Storage와 같이 도메인(사이트) 단위로 DB가 분리된다. 즉, 특정 도메인에서 생성한 DB는 다른 도메인에서는 접근할 수 없다.
+
+
+
+
+[참고블로그](https://m.blog.naver.com/PostView.nhn?blogId=lool2389&logNo=220895161420&proxyReferer=https:%2F%2Fwww.google.com%2FHTML5) 
+
+[참고교재 : 실전 HTML5 가이드](http://html5.creation.net/html5-guide-b5.pdf)
