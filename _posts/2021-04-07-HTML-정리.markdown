@@ -9,7 +9,7 @@ categories: Update
 호환성, 웹 기반 기술
 
 - 최근 네이버 메인화면
-![최근naver](../public/img/latestNaver.png)
+![최근naver](https://github.com/Barise/barise.github.io/blob/main/public/img/latestNaver.png)
 다양한 이미지,동영상과 같은 멀티미디어 들이 포함되어있음
 
 _HTML4에서는 이러한 멀티미디어 서비스를 제공하기위해 플러그인(plug-in)을 활용하였습니다._
