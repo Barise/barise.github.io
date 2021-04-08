@@ -2,14 +2,14 @@
 layout: HTML5
 title:  "HTML5 정리"
 date:   2021-04-08 19:30:29 +0900
-categories: Update
+categories: Web
 ---
 # HTML5
 ## 1. HTML5 등장배경
 호환성, 웹 기반 기술
 
 - 최근 네이버 메인화면
-![최근naver](https://github.com/Barise/barise.github.io/blob/main/public/img/latestNaver.png)
+![최근naver](https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile9.uf.tistory.com%2Fimage%2F9938FD395DC7B76618A3DD)
 다양한 이미지,동영상과 같은 멀티미디어 들이 포함되어있음
 
 _HTML4에서는 이러한 멀티미디어 서비스를 제공하기위해 플러그인(plug-in)을 활용하였습니다._
@@ -52,12 +52,14 @@ HTML 5와 HTML4는 크게 4가지정도의 차이점이 있습니다.
 
 <center>
 
-![tempOut](../public/img/outline.png)
+![tempOut](https://media.vlpt.us/images/blackb0x/post/7831406b-8a88-4136-9cbe-75fbef8c5e29/image.png)
 </center>
 
 ## 3. Element와 Attribute의 추가 및 변경
 ![addElement1](https://mblogthumb-phinf.pstatic.net/MjAxNjEyMjZfMjI3/MDAxNDgyNzM0MDUwNjYy.5OHu9VvgS27ISaBX2EIkgKc3QPphZMHJkDwytjDUbfIg.z6Yh3YWOnU3ntiZS0GrxMzuvX15BfugPuo-1q80wU9Eg.JPEG.lool2389/%EC%BA%A1%EC%B2%98.JPG?type=w800)
+<br/>
 ![addElement2](https://mblogthumb-phinf.pstatic.net/MjAxNjEyMjZfMjM2/MDAxNDgyNzM0MzQ0Mzcz.yI7tzVMCfA1BDxIDJHCh8OaR7t-6TfO1Wr6JocY68Lkg.CaRRpplDXvXp8VTaYI-f_FhHv12tGAKMQHVvm38H_ykg.JPEG.lool2389/%EC%BA%A1%EC%B2%98.JPG?type=w800)
+<br/>
 ![addAttribute](https://mblogthumb-phinf.pstatic.net/MjAxNjEyMjZfMjg1/MDAxNDgyNzM0NDI5NDEw.gp_LQ7Kdl-D1kC-flcP_3ZRduxr-3Z3E1h0IqsHIcUQg.9mXRu8a6ttP0RXD59alS-G8VhdiDV_Xh8k1uFW5GCZog.JPEG.lool2389/%EC%BA%A1%EC%B2%98.JPG?type=w800)
 
 
