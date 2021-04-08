@@ -10,6 +10,7 @@ categories: Web
 
 - 최근 네이버 메인화면
 ![최근naver](https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile9.uf.tistory.com%2Fimage%2F9938FD395DC7B76618A3DD)
+
 다양한 이미지,동영상과 같은 멀티미디어 들이 포함되어있음
 
 _HTML4에서는 이러한 멀티미디어 서비스를 제공하기위해 플러그인(plug-in)을 활용하였습니다._
