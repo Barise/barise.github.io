@@ -1,0 +1,8 @@
+---
+layout: 공부
+title: "공부"
+date: 2022-11-13 22:30:00 +0900
+categories: Study
+---
+
+# 공부
