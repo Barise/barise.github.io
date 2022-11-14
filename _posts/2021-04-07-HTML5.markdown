@@ -1,8 +1,8 @@
 ---
-layout: HTML5
+layout: post
 title:  "HTML5 정리"
 date:   2021-04-08 19:30:29 +0900
-categories: Web
+category: Web
 ---
 # HTML5
 ## 1. HTML5 등장배경
